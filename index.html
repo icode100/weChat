@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weMessage</title>
+    <link rel="shortcut icon" href="chat.png" type="image/x-icon">
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav style="display: flex; flex-direction: column;align-items: center;justify-content: center; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <img src="chat.png" alt="logo" class="logo">
+        <div id="tagname">weMessage</div>
+    </nav>
+    <div class="container">
+        <div class=" message right">peter: Hey how are you?</div>
+        <div class="message left">tiny: I am fine</div>
+        <div class="message center">someone joined</div>
+    </div>
+    <div class="send" style="display: flex; align-items: center;justify-content: center;">
+        <form action="#" id="send_container">
+            <input type="text" name="sendmsg" placeholder="enter your message" id="mssgsnd">
+            <button type="submit" style="cursor:pointer; height: 30px; width: 30px;border-radius: 100%;background-color: aliceblue;border: 1px solid aliceblue;position: relative;top: 5px;" class="btn"><img src="send.png" style="height: 25px; width: 25px; position: relative; right: 4px;bottom: 0px;"></button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
